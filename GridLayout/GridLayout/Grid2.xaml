@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GridLayout.Grid2"
+             BackgroundColor="#127ac7">
+
+    <Grid Padding="40" RowSpacing="10" ColumnSpacing="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <StackLayout VerticalOptions="Center" >
+            <Label Text="Welcome to Xamarin" FontSize="30" FontAttributes="Bold" HorizontalOptions="Center" />
+            <Label Text="Cross-platform apps made easy" FontSize="18" HorizontalOptions="Center" />
+        </StackLayout>
+
+        <Button Text="Login" BackgroundColor="#1dabf0" Grid.Row="1" HorizontalOptions="FillAndExpand" />
+        <Button Text="Register" BackgroundColor="#1dabf0" Grid.Row="2" HorizontalOptions="FillAndExpand" />
+    </Grid>
+</ContentPage>
